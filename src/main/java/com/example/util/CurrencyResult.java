@@ -18,13 +18,16 @@ public class CurrencyResult {
         double result = getAmount() * getConversionRate();
 
         System.out.printf("""
-        |----------------------------------|
-        |                                  |
-        |    %d %s equals to               |
-        |                                  |
-        |                %.2f %s          | 
-        |                                  | 
-        |----------------------------------|
+
+
+                                                                
+                                                                |----------------------------------|
+                                                                |                                  |
+                                                                |    %d %s equals to               |
+                                                                |                                  |
+                                                                |                %.2f %s           | 
+                                                                |                                  | 
+                                                                |----------------------------------|
                 """,getAmount(),getBaseCode(),result,getTargetCode());
     }
 

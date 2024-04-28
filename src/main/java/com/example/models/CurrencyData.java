@@ -15,8 +15,8 @@ public class CurrencyData {
         var gson = new Gson();
 
         var currencyApi = new CurrencyApi();
-        currencyApi.setFirstOption(getFirstChoose().toUpperCase());
-        currencyApi.setSecondOption(getSecondChoose().toUpperCase());
+        currencyApi.setFirstOption(getFirstChoose());
+        currencyApi.setSecondOption(getSecondChoose());
 
         String json = currencyApi.currencyRequest();
         CurrencyFormat currencyFormat = gson.fromJson(json, CurrencyFormat.class);
