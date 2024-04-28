@@ -18,10 +18,13 @@ public class Main {
 
         data.setFirstChoose(c.getFirstOption());
         data.setSecondChoose(c.getSecondOption());
-
         data.setAmount(1);
-        data.getData();        
-        var c3 = new CurrencyResult();
-        c3.getResult();
+        data.getData();    
+
+        var result = new CurrencyResult(data.getBaseCode(),data.getTargetCode(),data.getConversionRate(),data.getAmount());
+        result.displayResutl();
+    
+
+
     }
 }

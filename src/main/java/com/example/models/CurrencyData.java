@@ -1,5 +1,4 @@
 package com.example.models;
-
 import com.example.api.CurrencyApi;
 import com.google.gson.Gson;
 
@@ -21,6 +20,7 @@ public class CurrencyData {
 
         String json = currencyApi.currencyRequest();
         CurrencyFormat currencyFormat = gson.fromJson(json, CurrencyFormat.class);
+        
         setBaseCode(currencyFormat.base_code());
         setTargetCode(currencyFormat.target_code());
         setConversionRate(currencyFormat.conversion_rate());
