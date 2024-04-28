@@ -39,3 +39,4 @@ This project is a simple currency converter program that allows users to convert
 ## Contributing
 Contributions are welcome! If you'd like to improve this project, feel free to fork the repository and submit a pull request with your changes.
 
+![App Screenshot](https://i.ibb.co/prQYmdM/Badge-Conversor.png)
