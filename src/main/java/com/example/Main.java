@@ -35,8 +35,6 @@ public class Main {
         int to = sc.nextInt();
     
         option.optionSelected(from, to);
-          
-        if(option.getFirstChoice().equals("EXIT") || option.getSecondChoice().equals("EXIT"))break;
                 
         api.setFirstOption(option.getFirstChoice());
         api.setSecondOption(option.getSecondChoice());
