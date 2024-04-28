@@ -28,7 +28,7 @@ This project is a simple currency converter program that allows users to convert
 ```
     
 ## API KEY
-To get the api key first access thi website https://www.exchangerate-api.com/ and create an account get your api key and inside the project create a  file called `apikey.txt` in the root of your project
+To get the api key first access this website https://www.exchangerate-api.com/ and create an account, get your api key and inside the project, create a  file called `apikey.txt` in the root of your project.
 
 ## Supported Currencies
 - BRL: Brazilian Real 💵
