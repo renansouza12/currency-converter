@@ -23,39 +23,27 @@ public class Main {
 
                 """);
 
-                displayMessage("CONVERT FROM...");
-                int from = sc.nextInt();
-                displayMessage("TO...");
-                int to = sc.nextInt();
+        displayMessage("CONVERT FROM...");
+        int from = sc.nextInt();
+        displayMessage("TO...");
+        int to = sc.nextInt();
 
-                option.optionSelected(from, to);
-                
-                api.setFirstOption(option.getFirstChoice());
-                api.setSecondOption(option.getSecondChoice());
-
-                data.setFirstChoose(api.getFirstOption());
-                data.setSecondChoose(api.getSecondOption());
-                data.setAmount(1);
-
-                var result = new CurrencyResult(data.getBaseCode(), data.getTargetCode(), data.getConversionRate(), data.getAmount());
-                result.displayResutl();
+        option.optionSelected(from, to);
 
                 
-        // var c = new CurrencyApi();
-        // System.out.println("First Option: ");
-        // c.setFirstOption("eur");
-        // System.out.println("Second Option");
-        // c.setSecondOption("brl");
+        api.setFirstOption(option.getFirstChoice());
+        api.setSecondOption(option.getSecondChoice());
 
-        // var data = new CurrencyData();
+        data.setFirstChoose(api.getFirstOption());
+        data.setSecondChoose(api.getSecondOption());
 
-        // data.setFirstChoose(c.getFirstOption());
-        // data.setSecondChoose(c.getSecondOption());
-        // data.setAmount(1);
-        // data.getData();    
+        System.out.println("Enter the quantity you wish: ");
+        int quantity = sc.nextInt();
+        data.setAmount(quantity);
+        data.getData();    
 
-        // var result = new CurrencyResult(data.getBaseCode(),data.getTargetCode(),data.getConversionRate(),data.getAmount());
-        // result.displayResutl();
+        var result = new CurrencyResult(data.getBaseCode(),data.getTargetCode(),data.getConversionRate(),data.getAmount());
+        result.displayResutl();
         
     }
 
